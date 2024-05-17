@@ -122,10 +122,10 @@
             <div class="content has-text-centered">
                 <!-- include a figure -->
                 <figure class="image">
-                    <img src="./static/images/teaser.png" alt="Teaser">
+                    <img src="./static/images/teaser.png" alt="Teaser" style="max-width: 60%;">
                 </figure>
                 <p>
-                    Model-based Diffusion for Trajectory Optimization
+                    Model-based Diffusion enables flexible trajectory optimization without any data.
                 </p>
             </div>
         </div>
@@ -143,11 +143,26 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                        Recent advances in diffusion models have demonstrated their strong capabilities in generating high-fidelity samples from complex distributions through an iterative refinement process.
-                        Despite the empirical success of diffusion models in motion planning, the model-free nature of these methods does not leverage readily available model information and limits their generalization to new scenarios beyond the training data (e.g., new robots with different dynamics).
-                        In this work, we introduce Model-Based Diffusion (MBD), an optimization approach using the diffusion process to solve trajectory optimization (TO) problems \emph{without any data}. The key idea is to explicitly compute the score function by leveraging the model information in TO problems, which is why we refer to our approach as \emph{model-based diffusion}. Moreover, although MBD is data-free, it can be naturally integrated with data with diverse qualities, such as imperfect or partial-state demonstrations.
-                        We also reveal via theoretical analysis that MBD has interesting connections to sampling-based control.
-                        Empirical evaluations show that MBD outperforms state-of-the-art reinforcement learning and sampling-based TO methods in tasks involving both continuous and hybrid dynamics. Additionally, MBD's ability to integrate with demonstrations enhances its versatility and practical applicability, even with imperfect partial-state demonstrations, beyond the scope of standard diffusion models.
+                            Recent advances in diffusion models have demonstrated their strong capabilities in
+                            generating high-fidelity samples from complex distributions through an iterative refinement
+                            process.
+                            Despite the empirical success of diffusion models in motion planning, the model-free nature
+                            of these methods does not leverage readily available model information and limits their
+                            generalization to new scenarios beyond the training data (e.g., new robots with different
+                            dynamics).
+                            In this work, we introduce Model-Based Diffusion (MBD), an optimization approach using the
+                            diffusion process to solve trajectory optimization (TO) problems \emph{without any data}.
+                            The key idea is to explicitly compute the score function by leveraging the model information
+                            in TO problems, which is why we refer to our approach as \emph{model-based diffusion}.
+                            Moreover, although MBD is data-free, it can be naturally integrated with data with diverse
+                            qualities, such as imperfect or partial-state demonstrations.
+                            We also reveal via theoretical analysis that MBD has interesting connections to
+                            sampling-based control.
+                            Empirical evaluations show that MBD outperforms state-of-the-art reinforcement learning and
+                            sampling-based TO methods in tasks involving both continuous and hybrid dynamics.
+                            Additionally, MBD's ability to integrate with demonstrations enhances its versatility and
+                            practical applicability, even with imperfect partial-state demonstrations, beyond the scope
+                            of standard diffusion models.
                         </p>
                     </div>
                 </div>
@@ -167,17 +182,27 @@
             <!--/ Paper video. -->
         </div>
     </section>
-
+    
     <section class="section">
         <div class="container is-max-desktop">
+            <h2 class="title is-3">Tasks</h2>
             <div class="columns is-centered">
                 <div class="column">
                     <div class="content">
-                        <h2 class="title is-3">Tasks</h2>
-                        <!-- insert static/html/human_tracking.html -->
-                        <iframe src="static/html/human_tracking.html" width="500" height="400" style="border:1px solid black;">
+                        <iframe src="static/html/human_tracking.html" width="500" height="400"
+                            style="border:1px solid black;">
                             This browser does not support embedded HTML files.
                         </iframe>
+                        <div class="caption">Interactive View of Human Tracking</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <iframe src="static/html/human_tracking.html" width="500" height="400"
+                            style="border:1px solid black;">
+                            This browser does not support embedded HTML files.
+                        </iframe>
+                        <div class="caption">Interactive View of Human Tracking</div>
                     </div>
                 </div>
             </div>
