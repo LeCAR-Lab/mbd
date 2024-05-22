@@ -47,6 +47,24 @@
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
                         <h1 class="title is-1 publication-title">Model-based Diffusion for Trajectory Optimization</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://panchaoyi.com">Chaoyi Pan</a><sup>*</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://iscoyizj.github.io">Zeji Yi</a><sup>*</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="http://www.gshi.me/">Guanya Shi</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://www.guannanqu.com">Guannan Qu</a>,
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">Carnegie Mellon University</span>
+                        </div>
 
                         <div class="column has-text-centered">
                             <div class="publication-links">
@@ -100,18 +118,109 @@
             <div class="content has-text-centered">
                 <!-- include a figure -->
                 <figure class="image">
-                    <img src="./static/images/teaser.png" alt="Teaser" style="max-width: 60%;">
+                    <img src="./static/images/teaser.png" alt="Teaser" style="max-width: 80%;">
                 </figure>
                 <p>
-                    Model-based Diffusion enables flexible trajectory optimization without any data.
+                    Model-based Diffusion enables flexible trajectory generation without any data.
                 </p>
             </div>
         </div>
     </section>
 
-
-
-
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-steve">
+                        <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/humantrack.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-steve">
+                        <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/humantrack_diffusion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-chair-tp">
+                        <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/humanstandup.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-chair-tp">
+                        <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/humanstandup_diffusion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-shiba">
+                        <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/humanrun.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-shiba">
+                        <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/humanrun_diffusion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-fullbody">
+                        <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/ant.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-fullbody">
+                        <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/ant_diffusion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-blueshirt">
+                        <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/halfcheetah.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-blueshirt">
+                        <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/halfcheetah_diffusion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-mask">
+                        <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/hopper.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-mask">
+                        <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/hopper_diffusion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-coffee">
+                        <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/walker2d.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-coffee">
+                        <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/walker2d_diffusion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-toby">
+                        <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/pushT.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-toby">
+                        <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/pushT_diffusion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <p style="text-align: center;">
+                    Visualization of generated trajectories
+                    <span style="color: darkgoldenrod;">(yellow videos)</span> together with the corresponding diffusion
+                    process
+                    <span style="color: red;">(red videos)</span>.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <section class="section">
         <div class="container is-max-desktop">
@@ -123,24 +232,23 @@
                         <p>
                             Recent advances in diffusion models have demonstrated their strong capabilities in
                             generating high-fidelity samples from complex distributions through an iterative refinement
-                            process.
-                            Despite the empirical success of diffusion models in motion planning, the model-free nature
-                            of these methods does not leverage readily available model information and limits their
-                            generalization to new scenarios beyond the training data (e.g., new robots with different
-                            dynamics).
-                            In this work, we introduce Model-Based Diffusion (MBD), an optimization approach using the
-                            diffusion process to solve trajectory optimization (TO) problems \emph{without any data}.
-                            The key idea is to explicitly compute the score function by leveraging the model information
-                            in TO problems, which is why we refer to our approach as \emph{model-based diffusion}.
-                            Moreover, although MBD is data-free, it can be naturally integrated with data with diverse
-                            qualities, such as imperfect or partial-state demonstrations.
-                            We also reveal via theoretical analysis that MBD has interesting connections to
-                            sampling-based control.
-                            Empirical evaluations show that MBD outperforms state-of-the-art reinforcement learning and
-                            sampling-based TO methods in tasks involving both continuous and hybrid dynamics.
-                            Additionally, MBD's ability to integrate with demonstrations enhances its versatility and
-                            practical applicability, even with imperfect partial-state demonstrations, beyond the scope
-                            of standard diffusion models.
+                            process. Despite the empirical success of diffusion models in motion planning and control,
+                            the model-free nature of these methods does not leverage readily available model information
+                            and limits their generalization to new scenarios beyond the training data (e.g., new robots
+                            with different dynamics). In this work, we introduce Model-Based Diffusion (MBD), an
+                            optimization approach using the diffusion process to solve trajectory optimization (TO)
+                            problems <b>without data</b>. The key idea is to explicitly compute the score function by
+                            leveraging the model information in TO problems, which is why we refer to our approach as
+                            <b>model-based</b> diffusion. Moreover, although MBD does not require external data, it can
+                            be naturally integrated with data of diverse qualities to steer the diffusion process. We
+                            also reveal that MBD has interesting connections to sampling-based optimization. Empirical
+                            evaluations show that MBD outperforms state-of-the-art reinforcement learning and
+                            sampling-based TO methods in challenging contact-rich tasks. Additionally, MBD’s ability to
+                            integrate with data enhances its versatility and practical applicability, even with
+                            imperfect and infeasible data (e.g., partial-state demonstrations for high-dimensional
+                            humanoids), beyond the scope of standard diffusion models. Videos and codes are available in
+                            the supplementary materials.
+                            <!-- bold font -->
                         </p>
                     </div>
                 </div>
@@ -161,176 +269,6 @@
         </div>
     </section>
 
-    <section class="section">
-        <div class="container is-max-desktop">
-            <h2 class="title is-3">Tasks</h2>
-            <!-- humanstandup -->
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/humanstandup.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Humanoid Standup</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/humanstandup_diffusion.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Humanoid Standup Diffusion Process</div>
-                    </div>
-                </div>
-            </div>
-            <!-- pushT -->
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/pushT.html" width="500" height="400" style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Pushing Task</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/pushT_diffusion.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Pushing Task Diffusion Process</div>
-                    </div>
-                </div>
-            </div>
-            <!-- humanrun -->
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/humanrun.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Humanoid Run</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div classcontent="">
-                        <iframe src="static/html/humanrun_diffusion.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Humanoid Run Diffusion Process</div>
-                    </div>
-                </div>
-            </div>
-            <!-- humantrack -->
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/humantrack.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Humanoid Jogging</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/humantrack_diffusion.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Humanoid Jogging Diffusion Process</div>
-                    </div>
-                </div>
-            </div>
-            <!-- halfcheetah -->
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/halfcheetah.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Half Cheetah</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/halfcheetah_diffusion.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Half Cheetah Diffusion Process</div>
-                    </div>
-                </div>
-            </div>
-            <!-- ant -->
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/ant.html" width="500" height="400" style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Ant</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/ant_diffusion.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Ant Diffusion Process</div>
-                    </div>
-                </div>
-            </div>
-            <!-- walker2d -->
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/walker2d.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Walker2d</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/walker2d_diffusion.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Walker2d Diffusion Process</div>
-                    </div>
-                </div>
-            </div>
-            <!-- hopper -->
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/hopper.html" width="500" height="400" style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Hopper</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <iframe src="static/html/hopper_diffusion.html" width="500" height="400"
-                            style="border:1px solid black;">
-                            This browser does not support embedded HTML files.
-                        </iframe>
-                        <div class="caption">Hopper Diffusion Process</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <section class="section" id="BibTeX">
