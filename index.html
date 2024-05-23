@@ -103,7 +103,8 @@
                                 </span> -->
                                 <!-- Code Link. -->
                                 <span class="link-block">
-                                    <a href="https://github.com/LeCAR-Lab/model-based-diffusion" class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://github.com/LeCAR-Lab/model-based-diffusion"
+                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
@@ -287,18 +288,20 @@
                             <b>
                                 MBD can be data-free:
                             </b>
-                            Diffusion-based planner depends on large-scale and high-quality data, which is not available or expensive for robots.
-                            MBD does not require data, which enables flexible trajectory generation without any data. 
+                            Diffusion-based planner depends on large-scale and high-quality data, which is not available
+                            or expensive for robots.
+                            MBD does not require data, which enables flexible trajectory generation without any data.
                         </p>
                         <!-- MBD delivers good performance in short time -->
                         <p>
                             <b>
                                 MBD delivers good performance in short time:
                             </b>
-                            MBD can generate high-quality motion plans for nonconvex and nonsmooth tasks within tens of seconds, whose performance is comparable to RL. Here are some examples:
+                            MBD can generate high-quality motion plans for nonconvex and nonsmooth tasks within tens of
+                            seconds, whose performance is comparable to RL. Here are some examples:
                         </p>
                         <p>
-                            Interactive trajectories: 
+                            Interactive trajectories:
                             <a href="static/html/ant.html">Ant</a>
                             <a href="static/html/halfcheetah.html">HalfCheetah</a>
                             <a href="static/html/hopper.html">Hopper</a>
@@ -309,7 +312,7 @@
                             <a href="static/html/humanrun.html">Humanoid Run</a>
                         </p>
                         <p>
-                            Diffusion process: 
+                            Diffusion process:
                             <a href="static/html/ant_diffusion.html">Ant</a>
                             <a href="static/html/halfcheetah_diffusion.html">HalfCheetah</a>
                             <a href="static/html/hopper_diffusion.html">Hopper</a>
@@ -320,8 +323,7 @@
                             <a href="static/html/humanrun_diffusion.html">Humanoid Run</a>
                         </p>
                         <figure class="image">
-                            <img src="./static/images/results.png" alt="MBD"
-                                style="max-width: 100%;">
+                            <img src="./static/images/results.png" alt="MBD" style="max-width: 100%;">
                         </figure>
                     </div>
                 </div>
@@ -343,22 +345,52 @@
                             <b>
                                 MBD as a zeroth-order optimization method:
                             </b>
-                            Given an optimization problem (which provides model information), MBD seeks for its global optimum through the diffusion process.
+                            Given an optimization problem (which provides model information), MBD seeks for its global
+                            optimum through the diffusion process.
                         </p>
                         <!-- compare with model-free diffusion -->
                         <p>
                             <b>
                                 MBD vs. Model-free diffusion:
                             </b>
+                            MBD leverages model information to compute the score function
+                            explicitly, while model-free diffusion learns the score function from data.
                         </p>
-                        <figure class="image">
+                        <!-- <figure class="image">
                             <img src="./static/images/compare.png" alt="MBD"
                                 style="max-width: 100%;">
                             <p>
                                 MBD leverages model information to compute the score function
                                 explicitly, while model-free diffusion learns the score function from data.
                             </p>
-                        </figure>
+                        </figure> -->
+                        <table border="1">
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Model-Based Diffusion (MBD)</th>
+                                <th>Model-Free Diffusion (MFD)</th>
+                            </tr>
+                            <tr>
+                                <td>Target distribution</td>
+                                <td>Known, but hard to sample</td>
+                                <td>Unknown, but have data from it</td>
+                            </tr>
+                            <tr>
+                                <td>Objective</td>
+                                <td>Sample high-likelihood solution</td>
+                                <td>Generate diverse samples</td>
+                            </tr>
+                            <tr>
+                                <td>Score Approximation</td>
+                                <td>From model + data (optional)</td>
+                                <td>From data</td>
+                            </tr>
+                            <tr>
+                                <td>Backward Process</td>
+                                <td>Monte Carlo Score Ascent</td>
+                                <td>Reverse SDE</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
