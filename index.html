@@ -339,15 +339,14 @@
         </div>
     </section>
 
-
-    <!-- What: explain what is model-based diffusion -->
-    <!-- compare with model-free one -->
+    <!-- How: explain how to implement model-based diffusion -->
+    <!-- 1. score function -->
     <section class="section">
         <div class="container is-max-desktop">
             <div class="columns is-centered">
                 <div class="column">
                     <div class="content">
-                        <h2 class="title is-3">What is Model-Based Diffusion?</h2>
+                        <h2 class="title is-3">How does Model-Based Diffusion work?</h2>
                         <!-- model-based diffusion is a zeroth-order optimization method -->
                         <p>
                             <b>
@@ -356,11 +355,49 @@
                             Given an optimization problem (which provides model information), MBD seeks for its global
                             optimum through the diffusion process.
                         </p>
-                        <!-- compare with model-free diffusion -->
+                        <!-- score esitimation -->
                         <p>
                             <b>
-                                MBD vs. Model-free diffusion:
+                                Score function estimation:
                             </b>
+                            We propose to compute the score function by leveraging the model information and Monte Carlo
+                            approximation.
+                        </p>
+                        <!-- backward process -->
+                        <p>
+                            <b>
+                                Denoising process:
+                            </b>
+                            We propose Monte Carlo score ascent (MCSA) to replace reverse SDE to run backward process to
+                            achieve faster convergence to the target distribution.
+                        </p>
+                        <!-- include pdf here -->
+                        <figure class="image">
+                            <img src="./static/images/mcsa.png" alt="Model-Based Diffusion" style="max-width: 100%;">
+                            <p>
+                                Reverse SDE vs. Monte Carlo score ascent (MCSA) on a synthetic highly non-convex
+                                objective function. (a) Synthesized objective function with multiple local minima. (b)
+                                The intermediate stage density. (c) Reverse SDE vs. MCSA: Background colors represent
+                                the density at different stages. MCSA converges faster due to larger step size and lower
+                                sampling noise while still capturing the multimodality.
+                            </p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What: explain what is model-based diffusion -->
+    <!-- compare with model-free one -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="content">
+                        <h2 class="title is-3">MBD vs. Model-free diffusion</h2>
+                        <!-- compare with model-free diffusion -->
+                        <p>
                             MBD leverages model information to compute the score function
                             explicitly, while model-free diffusion learns the score function from data.
                         </p>
@@ -399,47 +436,6 @@
                                 <td>Reverse SDE</td>
                             </tr>
                         </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How: explain how to implement model-based diffusion -->
-    <!-- 1. score function -->
-    <section class="section">
-        <div class="container is-max-desktop">
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="content">
-                        <h2 class="title is-3">How does Model-Based Diffusion work?</h2>
-                        <!-- score esitimation -->
-                        <p>
-                            <b>
-                                Score function estimation:
-                            </b>
-                            We propose to compute the score function by leveraging the model information and Monte Carlo
-                            approximation.
-                        </p>
-                        <!-- backward process -->
-                        <p>
-                            <b>
-                                Denoising process:
-                            </b>
-                            We propose Monte Carlo score ascent (MCSA) to replace reverse SDE to run backward process to
-                            achieve faster convergence to the target distribution.
-                        </p>
-                        <!-- include pdf here -->
-                        <figure class="image">
-                            <img src="./static/images/mcsa.png" alt="Model-Based Diffusion" style="max-width: 100%;">
-                            <p>
-                                Reverse SDE vs. Monte Carlo score ascent (MCSA) on a synthetic highly non-convex
-                                objective function. (a) Synthesized objective function with multiple local minima. (b)
-                                The intermediate stage density. (c) Reverse SDE vs. MCSA: Background colors represent
-                                the density at different stages. MCSA converges faster due to larger step size and lower
-                                sampling noise while still capturing the multimodality.
-                            </p>
-                        </figure>
                     </div>
                 </div>
             </div>
