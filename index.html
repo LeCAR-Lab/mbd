@@ -122,13 +122,11 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="content has-text-centered">
-                <!-- include a figure -->
-                <figure class="image">
-                    <img src="./static/images/teaser.png" alt="Teaser" style="max-width: 80%;">
-                </figure>
-                <p>
-                    Model-based Diffusion enables flexible trajectory generation without any data.
-                </p>
+                <h2 class="title is-3">Overview Video</h2>
+                <!-- invert static/videos/intro.mov -->
+                <video poster="" id="intro" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/intro.mov" type="video/mp4">
+                </video>
             </div>
         </div>
     </section>
@@ -136,6 +134,7 @@
     <section class="hero is-light is-small">
         <div class="hero-body">
             <div class="container">
+                <h2 class="title is-3 has-text-centered">Generated Trajectories</h2>
                 <div id="results-carousel" class="carousel results-carousel">
                     <div class="item item-steve">
                         <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
@@ -265,16 +264,20 @@
             <!-- Paper video. -->
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
-                    <h2 class="title is-3">Video</h2>
-                    <!-- invert static/videos/intro.mov -->
-                    <video poster="" id="intro" autoplay controls muted loop playsinline height="100%">
-                        <source src="./static/videos/intro.mov" type="video/mp4">
-                    </video>
+                    <!-- include a figure -->
+                    <figure class="image">
+                        <img src="./static/images/teaser.png" alt="Teaser" style="max-width: 100%;">
+                    </figure>
+                    <p>
+                        Model-based Diffusion enables flexible trajectory generation without any data.
+                    </p>
                 </div>
             </div>
 
+
+
             <!--/ Paper video. -->
-        </div>  
+        </div>
     </section>
 
     <!-- Why: explain why model-based diffusion is important -->
