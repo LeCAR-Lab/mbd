@@ -291,19 +291,22 @@
                         <!-- MBD is data-free -->
                         <p>
                             <b>
-                                MBD can be data-free:
+                                MBD doesn’t require external data:
                             </b>
-                            Diffusion-based planner depends on large-scale and high-quality data, which is not available
-                            or expensive for robots.
-                            MBD does not require data, which enables flexible trajectory generation without any data.
+                            Diffusion-based planner relies on large-scale and high-quality demonstration data. By
+                            leveraging the model information, MBD is data-free, and can be naturally integrated with
+                            data to steer the diffusion process.
                         </p>
                         <!-- MBD delivers good performance in short time -->
                         <p>
                             <b>
                                 MBD delivers good performance in short time:
                             </b>
-                            MBD can generate high-quality motion plans for nonconvex and nonsmooth tasks within tens of
-                            seconds, whose performance is comparable to RL. Here are some examples:
+                            MBD can generate high-quality motion plans for contact-rich tasks with nonconvex cost
+                            functions within tens of seconds, whose performance is comparable to RL. (Note: MBD vs. RL
+                            is not apple-to-apple. For MBD we just replay the planned actions in an open loop whereas RL
+                            generates a closed-loop policy)
+                            Here are some examples:
                         </p>
                         <p>
                             Interactive trajectories:
